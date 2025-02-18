@@ -8,7 +8,16 @@
     <a href="{% url 'book-detail' bookinst.book.pk %}"
       >{{ bookinst.book.title }}</a
     >
+<<<<<<< HEAD
     ({{ bookinst.due_back }})
+=======
+    <span> ({{ bookinst.due_back }})</span>
+    <span>{% if user.is_staff %}- {{ bookinst.borrower }}{% endif %}</span>
+    {% if perms.catalog.can_mark_returned %}-
+    <a href="{% url 'renew-book-librarian' bookinst.id %}"
+      >{% trans "Renew" %}</a
+    >{% endif %}
+>>>>>>> d6abee1 (part 9)
   </li>
   {% endfor %}
 </ul>
