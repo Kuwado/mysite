@@ -16,6 +16,7 @@ class AuthorAdmin(admin.ModelAdmin):
     fields = ["first_name", "last_name", ("date_of_birth", "date_of_death")]
 
 
+# Register the Admin classes for Book using the decorator
 class BooksInstanceInline(admin.TabularInline):
     model = BookInstance
 
