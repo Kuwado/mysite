@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-27 16:24+0700\n"
+"POT-Creation-Date: 2025-03-02 22:38+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\locallibrary\catalog\models.py:26
+#: .\locallibrary\catalog\models.py:28
 msgid "Enter a book genre (e.g. Science Fiction, French Poetry etc.)"
 msgstr "Nhập một thể loại sách (ví dụ: Khoa học viễn tưởng, Thơ ca Pháp, v.v.)"
 
-#: .\locallibrary\catalog\models.py:56
+#: .\locallibrary\catalog\models.py:58
 msgid "Enter a brief description of the book"
 msgstr "Nhập một mô tả ngắn gọn về cuốn sách"
 
-#: .\locallibrary\catalog\models.py:63
+#: .\locallibrary\catalog\models.py:65
 msgid ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-"
 "isbn\">ISBN number</a>"
@@ -34,15 +34,15 @@ msgstr ""
 "13 Ký tự <a href=\"https://www.isbn-international.org/content/what-isbn\">số "
 "ISBN</a>"
 
-#: .\locallibrary\catalog\models.py:70
+#: .\locallibrary\catalog\models.py:72
 msgid "Select a genre for this book"
 msgstr "Chọn một thể loại cho cuốn sách này"
 
-#: .\locallibrary\catalog\models.py:93
+#: .\locallibrary\catalog\models.py:95
 msgid "Unique ID for this particular book across whole library"
 msgstr "Mã định danh duy nhất cho cuốn sách này trong toàn bộ thư viện"
 
-#: .\locallibrary\catalog\models.py:111
+#: .\locallibrary\catalog\models.py:113
 msgid "Book availability"
 msgstr "Tình trạng sẵn có của sách"
 
@@ -62,11 +62,27 @@ msgstr "Danh sách các sách"
 msgid "All authors"
 msgstr "Dách sách tác giả"
 
-#: .\locallibrary\catalog\templates\base_generic.html:41
+#: .\locallibrary\catalog\templates\base_generic.html:29
+msgid "User"
+msgstr "Người dùng"
+
+#: .\locallibrary\catalog\templates\base_generic.html:32
+msgid "My Borrowed"
+msgstr "Sách đã mượn"
+
+#: .\locallibrary\catalog\templates\base_generic.html:39
+msgid "Logout"
+msgstr "Đăng xuất"
+
+#: .\locallibrary\catalog\templates\base_generic.html:46
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: .\locallibrary\catalog\templates\base_generic.html:64
 msgid "previous"
 msgstr "Quay lại"
 
-#: .\locallibrary\catalog\templates\base_generic.html:52
+#: .\locallibrary\catalog\templates\base_generic.html:75
 msgid "next"
 msgstr "Tiếp theo"
 
@@ -124,6 +140,14 @@ msgstr "Sách:"
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
 
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:2
+msgid "Borrowed books"
+msgstr "Sách đã mượn"
+
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:17
+msgid "There are no books borrowed."
+msgstr "Không có sách nào trong thư viện."
+
 #: .\locallibrary\catalog\templates\index.html:3
 msgid "Local Library Home"
 msgstr "Trang chủ Local Library"
@@ -156,7 +180,7 @@ msgstr "Bản sao có sẵn:"
 msgid "Authors:"
 msgstr "Tác giả:"
 
-#: .\locallibrary\catalog\templates\index.html:22
+#: .\locallibrary\catalog\templates\index.html:21
 msgid "You have visited this page"
 msgstr "Bạn đã truy cập trang web này"
 
