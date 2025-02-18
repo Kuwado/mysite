@@ -156,5 +156,10 @@ msgstr "Bản sao có sẵn:"
 msgid "Authors:"
 msgstr "Tác giả:"
 
-#~ msgid "Welcome to LocalLibrary, một trang web được phát triển bởi"
-#~ msgstr "Chào mừng đến với"
+#: .\locallibrary\catalog\templates\index.html:22
+msgid "You have visited this page"
+msgstr "Bạn đã truy cập trang web này"
+
+#: .\locallibrary\catalog\templates\index.html:22
+msgid "time"
+msgstr "lần"
