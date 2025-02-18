@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-02 22:38+0700\n"
+"POT-Creation-Date: 2025-03-05 14:24+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\locallibrary\catalog\forms.py:10
+msgid "Enter a date between now and 4 weeks (default 3)."
+msgstr "Nhập một ngày từ bây giờ đến 4 tuần tiếp (mặc định 3 tuần)"
+
+#: .\locallibrary\catalog\forms.py:18
+msgid "Invalid date - renewal in past"
+msgstr "Ngày không hợp lệ - ngày trong quá khứ"
+
+#: .\locallibrary\catalog\forms.py:22
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr "Ngày không hợp lệ - ngày quá 4 tuần"
 
 #: .\locallibrary\catalog\models.py:28
 msgid "Enter a book genre (e.g. Science Fiction, French Poetry etc.)"
@@ -86,13 +98,23 @@ msgstr "Quay lại"
 msgid "next"
 msgstr "Tiếp theo"
 
+#: .\locallibrary\catalog\templates\catalog\author_confirm_delete.html:2
+msgid "Delete Author"
+msgstr "Tác giả:"
+
+#: .\locallibrary\catalog\templates\catalog\author_confirm_delete.html:3
+msgid "Are you sure you want to delete the author: "
+msgstr "Bạn có chắc muốn xóa tác giả: "
+
+#: .\locallibrary\catalog\templates\catalog\author_confirm_delete.html:6
+msgid "Yes, delete."
+msgstr "Đồng ý, xóa"
+
 #: .\locallibrary\catalog\templates\catalog\book_detail.html:2
 msgid "Title"
 msgstr "Tiêu đề"
 
 #: .\locallibrary\catalog\templates\catalog\book_detail.html:4
-#, fuzzy
-#| msgid "Authors:"
 msgid "Author"
 msgstr "Tác giả:"
 
@@ -113,8 +135,6 @@ msgid "Genre"
 msgstr "Thể loại"
 
 #: .\locallibrary\catalog\templates\catalog\book_detail.html:11
-#, fuzzy
-#| msgid "Copies:"
 msgid "Copies"
 msgstr "Bản sao:"
 
@@ -131,8 +151,6 @@ msgid "Id"
 msgstr "Mã số"
 
 #: .\locallibrary\catalog\templates\catalog\book_list.html:2
-#, fuzzy
-#| msgid "Books:"
 msgid "Book List"
 msgstr "Sách:"
 
@@ -140,11 +158,28 @@ msgstr "Sách:"
 msgid "There are no books in the library."
 msgstr "Không có sách nào trong thư viện."
 
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:2
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:15
+msgid "Renew"
+msgstr "Làm mới"
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:3
+msgid "Borrower"
+msgstr "Sách đã mượn"
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:5
+msgid "Due date"
+msgstr "Ngày hết hạn"
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:13
+msgid "Submit"
+msgstr "Nộp"
+
 #: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:2
 msgid "Borrowed books"
 msgstr "Sách đã mượn"
 
-#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:17
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:22
 msgid "There are no books borrowed."
 msgstr "Không có sách nào trong thư viện."
 
