@@ -1,4 +1,7 @@
 from django.urls import path
 from . import views
 
-urlpatterns = []
+# Khai báo view tương ứng với url
+urlpatterns = [
+    path("", views.index, name="index"),
+]
