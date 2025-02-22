@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+# Đăng ký các models
 from .models import Author, Genre, Book, BookInstance
 
 # admin.site.register(Book)
@@ -20,12 +20,24 @@ admin.site.register(Author, AuthorAdmin)
 
 
 # Register the Admin classes for Book using the decorator
+class BooksInstanceInline(admin.TabularInline):
+    model = BookInstance
+
+
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     list_display = ("title", "author", "display_genre")
+    # Thêm BookInstance vào dưới Book
+    inlines = [BooksInstanceInline]
 
 
 # Register the Admin classes for BookInstance using the decorator
 @admin.register(BookInstance)
 class BookInstanceAdmin(admin.ModelAdmin):
     list_filter = ("status", "due_back")
+
+    # Thêm section trong xem chi tiết
+    fieldsets = (
+        (None, {"fields": ("book", "imprint", "id")}),
+        ("Availability", {"fields": ("status", "due_back")}),
+    )
