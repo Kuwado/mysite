@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-24 18:50+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\locallibrary\catalog\models.py:21
+msgid "Enter a book genre (e.g. Science Fiction, French Poetry etc.)"
+msgstr "Nhập một thể loại sách (ví dụ: Khoa học viễn tưởng, Thơ ca Pháp, v.v.)"
+
+#: .\locallibrary\catalog\models.py:51
+msgid "Enter a brief description of the book"
+msgstr "Nhập một mô tả ngắn gọn về cuốn sách"
+
+#: .\locallibrary\catalog\models.py:58
+msgid ""
+"13 Character <a href=\"https://www.isbn-international.org/content/what-"
+"isbn\">ISBN number</a>"
+msgstr "13 Ký tự <a href=\"https://www.isbn-international.org/content/what-isbn\">số ISBN</a>"
+
+#: .\locallibrary\catalog\models.py:65
+msgid "Select a genre for this book"
+msgstr "Chọn một thể loại cho cuốn sách này"
+
+#: .\locallibrary\catalog\models.py:82
+msgid "Unique ID for this particular book across whole library"
+msgstr "Mã định danh duy nhất cho cuốn sách này trong toàn bộ thư viện"
+
+#: .\locallibrary\catalog\models.py:100
+msgid "Book availability"
+msgstr "Tình trạng sẵn có của sách"
