@@ -23,7 +23,8 @@ msgstr "Nhập một thể loại sách (ví dụ: Khoa học viễn tưởng, T
 
 #: .\locallibrary\catalog\models.py:51
 msgid "Enter a brief description of the book"
-msgstr "Nhập một mô tả ngắn gọn về cuốn sách nè"
+msgstr "Nhập một mô tả ngắn gọn về cuốn sách"
+
 
 #: .\locallibrary\catalog\models.py:58
 msgid ""

@@ -1,16 +1,19 @@
-from django.db import models
+import uuid  # Required for unique book instances
 
-# Create your models here.
+from django.db import models
 from django.urls import (
     reverse,
-)  # Used in get_absolute_url() to get URL for specified ID
-
+)
 from django.db.models import UniqueConstraint  # Constrains fields to unique values
 from django.db.models.functions import Lower  # Returns lower cased value of field
-
-import uuid  # Required for unique book instances
-from .constants import CHAR_MAX_LENGTH, TEXT_MAX_LENGTH
 from django.utils.translation import gettext_lazy as _
+
+from .constants import (
+    CHAR_MAX_LENGTH,
+    TEXT_MAX_LENGTH,
+    ISBN_MAX_LENGTH,
+    STATUS_MAX_LENGTH,
+)
 
 
 class Genre(models.Model):
@@ -53,7 +56,7 @@ class Book(models.Model):
     )
     isbn = models.CharField(
         "ISBN",
-        max_length=13,
+        max_length=ISBN_MAX_LENGTH,
         unique=True,
         help_text=_(
             '13 Character <a href="https://www.isbn-international.org/content/what-isbn'
@@ -100,7 +103,7 @@ class BookInstance(models.Model):
     )
 
     status = models.CharField(
-        max_length=1,
+        max_length=STATUS_MAX_LENGTH,
         choices=LOAN_STATUS,
         blank=True,
         default="m",
