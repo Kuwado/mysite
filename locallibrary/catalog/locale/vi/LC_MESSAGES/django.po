@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-24 18:50+0700\n"
+"POT-Creation-Date: 2025-02-26 16:02+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-#: .\locallibrary\catalog\models.py:21
+
+#: .\locallibrary\catalog\models.py:26
 msgid "Enter a book genre (e.g. Science Fiction, French Poetry etc.)"
 msgstr "Nhập một thể loại sách (ví dụ: Khoa học viễn tưởng, Thơ ca Pháp, v.v.)"
 
-#: .\locallibrary\catalog\models.py:51
+#: .\locallibrary\catalog\models.py:56
 msgid "Enter a brief description of the book"
 msgstr "Nhập một mô tả ngắn gọn về cuốn sách"
 
-#: .\locallibrary\catalog\models.py:58
+#: .\locallibrary\catalog\models.py:63
 msgid ""
 "13 Character <a href=\"https://www.isbn-international.org/content/what-"
 "isbn\">ISBN number</a>"
-msgstr "13 Ký tự <a href=\"https://www.isbn-international.org/content/what-isbn\">số ISBN</a>"
+msgstr ""
+"13 Ký tự <a href=\"https://www.isbn-international.org/content/what-isbn\">số "
+"ISBN</a>"
 
-#: .\locallibrary\catalog\models.py:65
+#: .\locallibrary\catalog\models.py:70
 msgid "Select a genre for this book"
 msgstr "Chọn một thể loại cho cuốn sách này"
 
-#: .\locallibrary\catalog\models.py:82
+#: .\locallibrary\catalog\models.py:93
 msgid "Unique ID for this particular book across whole library"
 msgstr "Mã định danh duy nhất cho cuốn sách này trong toàn bộ thư viện"
 
-#: .\locallibrary\catalog\models.py:100
+#: .\locallibrary\catalog\models.py:111
 msgid "Book availability"
 msgstr "Tình trạng sẵn có của sách"
+
+#: .\locallibrary\catalog\templates\base_generic.html:5
+msgid "Local Library"
+msgstr "Local Library"
+
+#: .\locallibrary\catalog\templates\base_generic.html:24
+msgid "Home"
+msgstr "Trang chủ"
+
+#: .\locallibrary\catalog\templates\base_generic.html:25
+msgid "All books"
+msgstr "Danh sách các sách"
+
+#: .\locallibrary\catalog\templates\base_generic.html:26
+msgid "All authors"
+msgstr "Dách sách tác giả"
+
+#: .\locallibrary\catalog\templates\index.html:3
+msgid "Local Library Home"
+msgstr "Trang chủ Local Library"
+
+#: .\locallibrary\catalog\templates\index.html:5
+msgid "Welcome to LocalLibrary, một trang web được phát triển bởi"
+msgstr "Chào mừng đến với"
+
+#: .\locallibrary\catalog\templates\index.html:8
+msgid "Dynamic content"
+msgstr "Nội dung động"
+
+#: .\locallibrary\catalog\templates\index.html:9
+msgid "The library has the following record counts:"
+msgstr "Thư viện có số lượng bản ghi:"
+
+#: .\locallibrary\catalog\templates\index.html:11
+msgid "Books:"
+msgstr "Sách:"
+
+#: .\locallibrary\catalog\templates\index.html:12
+msgid "Copies:"
+msgstr "Bản sao:"
+
+#: .\locallibrary\catalog\templates\index.html:14
+msgid "Copies available:"
+msgstr "Bản sao có sẵn:"
+
+#: .\locallibrary\catalog\templates\index.html:17
+msgid "Authors:"
+msgstr "Tác giả:"

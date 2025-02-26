@@ -13,6 +13,7 @@ from .constants import (
     TEXT_MAX_LENGTH,
     ISBN_MAX_LENGTH,
     STATUS_MAX_LENGTH,
+    BookStatus,
 )
 
 
@@ -95,18 +96,18 @@ class BookInstance(models.Model):
     imprint = models.CharField(max_length=CHAR_MAX_LENGTH)
     due_back = models.DateField(null=True, blank=True)
 
-    LOAN_STATUS = (
-        ("m", "Maintenance"),
-        ("o", "On loan"),
-        ("a", "Available"),
-        ("r", "Reserved"),
-    )
+    LOAN_STATUS = [
+        (BookStatus.MAINTENANCE.value, "Maintenance"),
+        (BookStatus.ON_LOAN.value, "On loan"),
+        (BookStatus.AVAILABLE.value, "Available"),
+        (BookStatus.RESERVED.value, "Reserved"),
+    ]
 
     status = models.CharField(
         max_length=STATUS_MAX_LENGTH,
         choices=LOAN_STATUS,
         blank=True,
-        default="m",
+        default=BookStatus.MAINTENANCE.value,
         help_text=_("Book availability"),
     )
 
