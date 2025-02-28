@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-26 16:02+0700\n"
+"POT-Creation-Date: 2025-02-27 16:24+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,13 +62,75 @@ msgstr "Danh sách các sách"
 msgid "All authors"
 msgstr "Dách sách tác giả"
 
+#: .\locallibrary\catalog\templates\base_generic.html:41
+msgid "previous"
+msgstr "Quay lại"
+
+#: .\locallibrary\catalog\templates\base_generic.html:52
+msgid "next"
+msgstr "Tiếp theo"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:2
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:4
+#, fuzzy
+#| msgid "Authors:"
+msgid "Author"
+msgstr "Tác giả:"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:5
+msgid "Summary"
+msgstr "Tóm tắt"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:6
+msgid "ISBN"
+msgstr "Mã ISBN"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:7
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:8
+msgid "Genre"
+msgstr "Thể loại"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:11
+#, fuzzy
+#| msgid "Copies:"
+msgid "Copies"
+msgstr "Bản sao:"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:21
+msgid "Due to be returned"
+msgstr "Ngày phải trả"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:23
+msgid "Imprint"
+msgstr "Dấu ấn xuất bản"
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:24
+msgid "Id"
+msgstr "Mã số"
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:2
+#, fuzzy
+#| msgid "Books:"
+msgid "Book List"
+msgstr "Sách:"
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:14
+msgid "There are no books in the library."
+msgstr "Không có sách nào trong thư viện."
+
 #: .\locallibrary\catalog\templates\index.html:3
 msgid "Local Library Home"
 msgstr "Trang chủ Local Library"
 
 #: .\locallibrary\catalog\templates\index.html:5
-msgid "Welcome to LocalLibrary, một trang web được phát triển bởi"
-msgstr "Chào mừng đến với"
+msgid "Welcome to LocalLibrary, a website developed by"
+msgstr "Chào mừng đến với LocalLibrary, một trang web được phát triển bởi"
 
 #: .\locallibrary\catalog\templates\index.html:8
 msgid "Dynamic content"
@@ -93,3 +155,6 @@ msgstr "Bản sao có sẵn:"
 #: .\locallibrary\catalog\templates\index.html:17
 msgid "Authors:"
 msgstr "Tác giả:"
+
+#~ msgid "Welcome to LocalLibrary, một trang web được phát triển bởi"
+#~ msgstr "Chào mừng đến với"
