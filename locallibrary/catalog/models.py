@@ -1,4 +1,5 @@
 import uuid  # Required for unique book instances
+from datetime import date
 
 from django.db import models
 from django.urls import (
@@ -7,6 +8,7 @@ from django.urls import (
 from django.db.models import UniqueConstraint  # Constrains fields to unique values
 from django.db.models.functions import Lower  # Returns lower cased value of field
 from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import User
 
 from .constants import (
     CHAR_MAX_LENGTH,
@@ -111,12 +113,20 @@ class BookInstance(models.Model):
         help_text=_("Book availability"),
     )
 
+    borrower = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+
     class Meta:
         ordering = ["due_back"]
+        permissions = (("can_mark_returned", "Set book as returned"),)
 
     def __str__(self):
         """String for representing the Model object."""
         return f"{self.id} ({self.book.title})"
+
+    @property
+    def is_overdue(self):
+        """Determines if the book is overdue based on due date and current date."""
+        return self.due_back and date.today() > self.due_back
 
 
 class Author(models.Model):
