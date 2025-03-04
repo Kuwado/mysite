@@ -36,5 +36,5 @@ class BookInstanceAdmin(admin.ModelAdmin):
     # Thêm section trong xem chi tiết
     fieldsets = (
         (None, {"fields": ("book", "imprint", "id")}),
-        ("Availability", {"fields": ("status", "due_back")}),
+        ("Availability", {"fields": ("status", "due_back", "borrower")}),
     )
